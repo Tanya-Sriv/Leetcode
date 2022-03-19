@@ -7,13 +7,9 @@ class Solution:
             return False
         for k in range(l):
             if len(arr)>0: 
-                if s[k] in d and arr[-1]==d[s[k]]:
-                    # print(s[k])
-                    arr.pop(-1)
-                else:
-                    arr.append(s[k])
+                # to check if closing bracket and if openning bracket already used                                   
+                arr.pop(-1) if s[k] in d and arr[-1]==d[s[k]] else arr.append(s[k]) 
             else:
+                # if openning bracket and if previous pairs found already and ths one is new combination                                  
                 arr.append(s[k])
-        #     print(arr)
-        # print("---")
         return True if arr==[] else False
