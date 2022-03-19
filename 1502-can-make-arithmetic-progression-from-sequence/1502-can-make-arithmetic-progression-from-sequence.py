@@ -13,6 +13,7 @@ class Solution:
                     return False
                 else:
                     prev_diff = diff
+                    
         return True
             
             
