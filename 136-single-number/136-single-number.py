@@ -1,12 +1,13 @@
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
         # Method 1
-        s = []
-        for i in nums:
-            if i not in s:
-                s.append(i)
+        nums.sort()
+        s = [nums[0]]
+        for i in range(1,len(nums)):
+            if nums[i] != nums[i-1] :
+                s.append(nums[i])
             else:
-                s.remove(i)
+                s.remove(nums[i])
         return s[0]
             
             
