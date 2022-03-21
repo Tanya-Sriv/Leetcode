@@ -1,8 +1,8 @@
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
         # Method 2:
-        c = Counter(nums)
-        for i,v in c.items():
+        # c = Counter(nums)
+        for i,v in Counter(nums).items():
             if v < 2:
                 return i
         # Method 1
