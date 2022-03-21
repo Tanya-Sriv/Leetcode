@@ -30,14 +30,13 @@ class Solution:
                     continue
                 else:
                     return n[:i]+ x + n[i:]
-            return n + x
         else:
             for i,s in enumerate(n[1:]):
                 if s <= x:
                     continue
                 else:
                     return "-" + n[1:i+1]+ x + n[i+1:]
-            return n + x
+        return n + x
             
             
         
