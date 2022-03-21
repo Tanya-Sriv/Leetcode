@@ -1,6 +1,6 @@
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
-        # Method 1:
+        # Method 1
         # c = Counter(nums)
         for i,v in Counter(nums).items():
             if v < 2:
