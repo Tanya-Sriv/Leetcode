@@ -1,5 +1,20 @@
 class Solution:
     def maxValue(self, n: str, x: int) -> str:
+        flag = "-" in n
+        x = str(x)
+        if not flag:
+            for i, s in enumerate(n):
+                if s >= x:
+                    continue
+                else:
+                    return n[:i]+ x + n[i:]
+        else:
+            for i,s in enumerate(n[1:]):
+                if s <= x:
+                    continue
+                else:
+                    return "-" + n[1:i+1]+ x + n[i+1:]
+        return n + x
 #         Method 1: Brute Force
 #         flag = 0
 #         x_s = str(x)
@@ -22,21 +37,6 @@ class Solution:
 #                     # print("negative small index=0 ")
 #                     return "-"+x_s+n
 #         return "-"+n+str(x) if flag == 1 else n+str(x)
-        flag = "-" in n
-        x = str(x)
-        if not flag:
-            for i, s in enumerate(n):
-                if s >= x:
-                    continue
-                else:
-                    return n[:i]+ x + n[i:]
-        else:
-            for i,s in enumerate(n[1:]):
-                if s <= x:
-                    continue
-                else:
-                    return "-" + n[1:i+1]+ x + n[i+1:]
-        return n + x
             
             
         
