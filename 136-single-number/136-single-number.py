@@ -5,7 +5,7 @@ class Solution:
         for i,v in Counter(nums).items():
             if v < 2:
                 return i
-        # Method 2:
+        # Method 2
         # nums.sort()
         # s = [nums[0]]
         # for i in range(1,len(nums)):
