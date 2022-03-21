@@ -12,7 +12,6 @@ class Solution:
         
         # Method 2:
         c = Counter(nums)
-        print(c)
         for i,v in c.items():
             if v < 2:
                 return i
