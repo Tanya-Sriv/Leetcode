@@ -1,5 +1,10 @@
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
+        # Method 2:
+        c = Counter(nums)
+        for i,v in c.items():
+            if v < 2:
+                return i
         # Method 1
         # nums.sort()
         # s = [nums[0]]
@@ -10,11 +15,6 @@ class Solution:
         #         s.remove(nums[i])
         # return s[0]
         
-        # Method 2:
-        c = Counter(nums)
-        for i,v in c.items():
-            if v < 2:
-                return i
             
                 
             
