@@ -11,8 +11,8 @@ class Solution:
         # Method 4:
         t += s
         t_c = Counter(t)
-        for k, v in t_c.items():
-            if v%2 != 0:
+        for k in t_c.keys():
+            if t_c[k]%2 != 0:
                 return k
         
         # Method1
