@@ -9,8 +9,8 @@ class Solution:
         #         return k
         
         # Method 4:
-        # t += s
-        t_c = Counter(t+s)
+        t += s
+        t_c = Counter(t)
         for k, v in t_c.items():
             if v%2 != 0:
                 return k
