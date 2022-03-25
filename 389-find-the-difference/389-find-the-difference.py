@@ -1,11 +1,18 @@
 class Solution:
     def findTheDifference(self, s: str, t: str) -> str:
-        #Method 3:
+        #Method 3: Runtime: 35 ms Memory:14 MB
         #using counter
-        s_c = Counter(s)
-        t_c = Counter(t)
-        for k in t_c.keys():
-            if k not in s_c.keys() or t_c[k] != s_c[k]:
+        # s_c = Counter(s)
+        # t_c = Counter(t)
+        # for k in t_c.keys():
+        #     if k not in s_c.keys() or t_c[k] != s_c[k]:
+        #         return k
+        
+        # Method 4:
+        # t += s
+        t_c = Counter(t+s)
+        for k, v in t_c.items():
+            if v%2 != 0:
                 return k
         
         # Method1
