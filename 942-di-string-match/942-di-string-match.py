@@ -1,6 +1,7 @@
 class Solution:
     def diStringMatch(self, s: str) -> List[int]:
-        mx,mn = len(s),0
+        mx = len(s)
+        mn = 0
         l = []
         for i in s:
             if i == 'I':
