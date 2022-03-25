@@ -1,5 +1,13 @@
 class Solution:
     def findTheDifference(self, s: str, t: str) -> str:
+        #Method 3:
+        #using counter
+        s_c = Counter(s)
+        t_c = Counter(t)
+        for k in t_c.keys():
+            if k not in s_c.keys() or t_c[k] != s_c[k]:
+                return k
+        
         # Method1
         # if s == '':
         #     return t[0]
@@ -8,12 +16,15 @@ class Solution:
         #     if i in t:
         #         t.pop(t.index(i))
         # return t[0]
+        
         # Method 2:
-        s = list(s)
-        s.sort()
-        t = list(t)
-        t.sort()
-        for i in range(len(t)-1):
-            if t[i] != s[i]:
-                return t[i]
-        return t[-1]
+        # s = list(s)
+        # s.sort()
+        # t = list(t)
+        # t.sort()
+        # for i in range(len(t)-1):
+        #     if t[i] != s[i]:
+        #         return t[i]
+        # return t[-1]
+        
+        
