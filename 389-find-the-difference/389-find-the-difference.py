@@ -8,7 +8,7 @@ class Solution:
         #     if k not in s_c.keys() or t_c[k] != s_c[k]:
         #         return k
         
-        # Method 4: Runtime: 44 ms Memory:13.8 MB
+        # Method 4: Runtime: 36 ms Memory:13.9 MB
         t += s
         t_c = Counter(t)
         for k in t_c.keys():
