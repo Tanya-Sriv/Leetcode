@@ -8,7 +8,7 @@ class Solution:
         # return count
         
         #Method 2
-        for i in bin(n):
+        for i in str(bin(n)):
             if i == '1':
                 count+=1
         return count
