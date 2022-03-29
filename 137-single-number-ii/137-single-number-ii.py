@@ -4,11 +4,10 @@ class Solution:
         l = len(nums)
         if l<3:
             return nums[0]
-        for i in range(0,l,3):
+        for i in range(0,l-2,3):
             if i <= l-3:
                 if nums[i] == nums[i+1] and nums[i+1] == nums[i+2]:
                     continue
                 else:
                     return nums[i]
-            else:
-                return nums[-1]
+        return nums[-1]
