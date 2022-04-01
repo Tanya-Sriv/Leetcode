@@ -3,6 +3,7 @@ class Solution:
         """
         Do not return anything, modify s in-place instead.
         """
+        # Method 1:
         temp = ''
         for i in range(len(s)//2):
             temp = s[i]
