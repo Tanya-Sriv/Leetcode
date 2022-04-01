@@ -8,10 +8,10 @@ class Solution:
         while i < l1 or j < l2:
             if i >= l1 and j < l2:
                 ans += word2[j:l2]
-                break
+                return ans
             elif i < l1 and j >= l2:
                 ans += word1[i:l1]
-                break
+                return ans
             elif i < l1 and j < l2:
                 if i < l1:
                     ans += word1[i]
@@ -20,5 +20,6 @@ class Solution:
                     ans += word2[j]
                     j+=1
         return ans
+        
         
         
