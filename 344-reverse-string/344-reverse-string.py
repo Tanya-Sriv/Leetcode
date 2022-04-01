@@ -3,8 +3,10 @@ class Solution:
         """
         Do not return anything, modify s in-place instead.
         """
-        # Method 1:
+        # Method 1
         temp = ''
         for i in range(len(s)//2):
-            s[i], s[-1*i -1] = s[-1*i -1], s[i]
+            temp = s[i]
+            s[i] = s[-1*i -1]
+            s[-1*i -1] = temp
         
