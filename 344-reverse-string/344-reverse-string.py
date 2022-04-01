@@ -4,9 +4,12 @@ class Solution:
         Do not return anything, modify s in-place instead.
         """
         # Method 1
-        temp = ''
+        # temp = ''
+        # for i in range(len(s)//2):
+        #     temp = s[i]
+        #     s[i] = s[-1*i -1]
+        #     s[-1*i -1] = temp
+        # Method 2
         for i in range(len(s)//2):
-            temp = s[i]
-            s[i] = s[-1*i -1]
-            s[-1*i -1] = temp
+            s[i], s[-1*i -1] = s[-1*i -1], s[i]
         
