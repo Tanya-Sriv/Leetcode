@@ -10,9 +10,3 @@ class Solution:
             s[i] = s[-1*i -1]
             s[-1*i -1] = temp
         
-        # Method 2: using dicgtionary
-        # d = {index: value for index, value in enumerate(s)}
-        # l = len(s)
-        # for i in range(l//2):
-        #     s[i] = d[l-i-1]
-        #     s[-1*i -1] = d[i]
