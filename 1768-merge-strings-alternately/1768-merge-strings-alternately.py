@@ -6,19 +6,19 @@ class Solution:
         i = 0
         j = 0
         while i < l1 or j < l2:
-            if i >= l1 and j < l2:
-                ans += word2[j:l2]
-                return ans
-            elif i < l1 and j >= l2:
-                ans += word1[i:l1]
-                return ans
-            elif i < l1 and j < l2:
+            if i < l1 and j < l2:
                 if i < l1:
                     ans += word1[i]
                     i+=1
                 if j < l2:
                     ans += word2[j]
                     j+=1
+            elif i >= l1 and j < l2:
+                ans += word2[j:l2]
+                return ans
+            elif i < l1 and j >= l2:
+                ans += word1[i:l1]
+                return ans
         return ans
         
         
