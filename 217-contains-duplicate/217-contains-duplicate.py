@@ -1,6 +1,6 @@
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
-        # Method 2
+        # Method 1
         n = Counter(nums)
         if max(n.values()) > 1:
             return True
@@ -14,7 +14,7 @@ class Solution:
         #     log.add(i)
         # return False
            
-        # Method 1
+        # Method 2
         # array sort
         # iter through element- if element present -> dic[val] = not null return true else skip.
         # nums.sort()
