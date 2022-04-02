@@ -1,8 +1,8 @@
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         # Method 2
-        # n = Counter(nums)
-        if max(Counter(nums).values()) > 1:
+        n = Counter(nums)
+        if max(n.values()) > 1:
             return True
         return False
         
