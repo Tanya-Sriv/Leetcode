@@ -9,4 +9,3 @@ class Solution:
             if c > 1:
                 return False
         return True
-            
