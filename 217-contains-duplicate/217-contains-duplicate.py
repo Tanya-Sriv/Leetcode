@@ -1,6 +1,6 @@
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
-        # Method1
+        # Method 1
         n = max(Counter(nums).values())
         if n > 1:
             return True
