@@ -3,7 +3,7 @@ class Solution:
         if n <= 0:
             return False
         while n != 1:
-            if n/2 != int(n/2):
+            if n/2 != n//2:
                 return False
             n = n/2
         return True 
