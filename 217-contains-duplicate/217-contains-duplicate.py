@@ -1,17 +1,17 @@
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         # Method 3:
-        log = set()
-        for i in nums:
-            if i in log:
-                return True
-            log.add(i)
-        return False
+        # log = set()
+        # for i in nums:
+        #     if i in log:
+        #         return True
+        #     log.add(i)
+        # return False
         # Method 2
         # n = Counter(nums)
-        # if max(n.values()) > 1:
-        #     return True
-        # return False
+        if max(Counter(nums).values()) > 1:
+            return True
+        return False
     
         # Method 1
         # array sort
