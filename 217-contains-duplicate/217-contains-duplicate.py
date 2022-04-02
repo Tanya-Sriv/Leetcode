@@ -4,7 +4,8 @@ class Solution:
         n = Counter(nums)
         if max(n.values()) > 1:
             return True
-        return False        
+        return False 
+    
         # Method 3:
         # log = set()
         # for i in nums:
