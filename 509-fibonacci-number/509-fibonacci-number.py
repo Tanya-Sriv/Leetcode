@@ -1,10 +1,8 @@
 class Solution:
     def fib(self, n: int) -> int:
         fib = [0,1] 
-        if n == 0:
-            return fib[0]
-        elif n == 1:
-            return fib[1]
+        if n <2:
+            return fib[n]
         for i in range(2,n+1):
             fib.append(fib[i-1]+fib[i-2])
         return fib[-1]
