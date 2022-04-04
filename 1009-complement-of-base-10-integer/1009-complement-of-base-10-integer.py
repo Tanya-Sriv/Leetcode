@@ -6,6 +6,6 @@ class Solution:
         # mask = int("1"*len(n_binary),2)
         # return n^mask
         # Method 1: Runtime: 30 ms	Memory:13.8 MB
-        l = len(bin(n))-2
-        mask = 2**l -1
-        return n^mask
+        # l = len(bin(n))-2
+        # mask = 2**l -1
+        return n^(2**(len(bin(n))-2) -1)
