@@ -1,6 +1,6 @@
 class Solution:
     def bitwiseComplement(self, n: int) -> int:
-        # 101^ 111 => 010
+        # 101^111 => 010
         # Method 1: Runtime: 30 ms	Memory:13.8 MB
         l = len(bin(n))-2
         mask = 2**l -1
