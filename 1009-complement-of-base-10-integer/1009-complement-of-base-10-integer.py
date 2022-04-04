@@ -7,5 +7,5 @@ class Solution:
         # return n^mask
         # Method 1: Runtime: 30 ms	Memory:13.8 MB
         l = len(bin(n))-2
-        # mask = 2**l -1
-        return n^2**l -1
+        mask = 2**l -1
+        return n^mask
