@@ -5,7 +5,6 @@ class Solution:
         elif len(stones)> 1:
             stones = sorted(stones, reverse=True)
             while len(stones) > 2:
-                print(stones)
                 m = stones.pop(0)
                 n = stones.pop(0)
                 if m>n:
