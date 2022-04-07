@@ -14,8 +14,7 @@ class Solution:
                 else:
                     m = 0
                 stones = sorted(stones, reverse=True)
-            if stones:
-                return stones[0] - stones[1]               
+            return stones[0] - stones[1]               
         return 0
         # if len(stones)== 1:
         #     return stones[0]
