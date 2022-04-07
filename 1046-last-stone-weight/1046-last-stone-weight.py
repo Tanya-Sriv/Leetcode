@@ -1,9 +1,9 @@
 class Solution:
     def lastStoneWeight(self, stones: List[int]) -> int:
-        # Method 1
-        if len(stones)== 1:
+        l = len(stones)
+        if l== 1:
             return stones[0]
-        elif len(stones)> 1:
+        elif l> 1:
             stones = sorted(stones, reverse=True)
             while len(stones) > 2:
                 m = stones.pop(0)
