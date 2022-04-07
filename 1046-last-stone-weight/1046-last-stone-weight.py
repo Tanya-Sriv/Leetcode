@@ -7,11 +7,10 @@ class Solution:
             while len(stones) > 2:
                 m = stones.pop(0)
                 n = stones.pop(0)
+                stones.append(m - n)
                 if m>n:
-                    stones.append(m - n)
                     n = 0                    
                 else:
-                    stones.append(m - n)
                     m = 0
                 stones = sorted(stones, reverse=True)
             if stones:
