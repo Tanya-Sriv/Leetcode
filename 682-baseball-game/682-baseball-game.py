@@ -4,7 +4,7 @@ class Solution:
         if len(ops) == 1:
             return ops[0]
         elif len(ops) == 2:
-            return ops[0] + int(ops[1])                   
+            return ops[0]+int(ops[1])                   
         if ops[1] != "C" and ops[1] != 'D' and ops[1] != "+":
             ops[1] = int(ops[1])
         i = 1
