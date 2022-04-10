@@ -1,10 +1,10 @@
 class Solution:
     def calPoints(self, ops: List[str]) -> int:
-        if len(ops) == 1:
-            return int(ops[0])
-        elif len(ops) == 2:
-            return int(ops[0]) + int(ops[1])                   
         ops[0] = int(ops[0])
+        if len(ops) == 1:
+            return ops[0]
+        elif len(ops) == 2:
+            return ops[0] + int(ops[1])                   
         if ops[1] != "C" and ops[1] != 'D' and ops[1] != "+":
             ops[1] = int(ops[1])
         i = 1
