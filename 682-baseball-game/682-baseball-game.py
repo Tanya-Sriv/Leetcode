@@ -12,7 +12,7 @@ class Solution:
         #     else:
         #         l.append(int(i))
         # return sum(l)
-        # Method 2:
+        # Method 2 :
         ops[0] = int(ops[0])
         if len(ops) == 1:
             return ops[0]
