@@ -12,8 +12,7 @@ class Solution:
                 out.append([prev_start, prev_end])
                 prev_start = intervals[i][0]
                 prev_end = intervals[i][1]
-        res = [prev_start, prev_end]
-        out.append(res)    
+        out.append([prev_start, prev_end])    
         return out
         
                     
