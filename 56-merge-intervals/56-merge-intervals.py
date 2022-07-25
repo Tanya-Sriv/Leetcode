@@ -16,7 +16,7 @@ class Solution:
         # out.append([prev_start, prev_end])    
         # return out
         
-        # method 2: O(nlogn)
+        # method 2: O(nlogn)/O(n)
         result = []
         intervals.sort(key = lambda x:x[0])
         for i in intervals:
