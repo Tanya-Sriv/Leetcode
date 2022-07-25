@@ -20,7 +20,8 @@ class Solution:
         result = []
         intervals.sort(key = lambda x:x[0])
         for i in intervals:
-            if not result or result[-1][1] < i[0]:
+            start, end = i
+            if not result or result[-1][1] < start:
                 result.append(i)
             else:
                 result[-1][1] = max(result[-1][1], i[1])
