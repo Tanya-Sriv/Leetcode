@@ -24,7 +24,7 @@ class Solution:
             if not result or result[-1][1] < start:
                 result.append(i)
             else:
-                result[-1][1] = max(result[-1][1], i[1])
+                result[-1][1] = max(result[-1][1], end)
         return result
         
         
