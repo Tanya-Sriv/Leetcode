@@ -3,7 +3,6 @@ class Solution:
         pas = [[1]]
         temp = []
         for i in range(1, n):
-            # temp = [1]
             prev_row = pas[-1]
             for j in range(len(prev_row)+1):
                 if j == 0 or j == len(prev_row):
